@@ -1,2 +1,1 @@
-
-## Hello 9tq-wand!
+## Wand
