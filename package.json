@@ -1,7 +1,7 @@
 {
   "private": false,
-  "name": "9tq-wand",
-  "version": "1.0.2",
+  "name": "@9troisquarts/wand",
+  "version": "1.2.2",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -16,6 +16,10 @@
   },
   "module": "es/index.js",
   "typings": "es/index.d.ts",
+  "main": "es/index.js",
+  "files": [
+    "es"
+  ],
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
@@ -28,14 +32,20 @@
     ]
   },
   "dependencies": {
+    "antd": "^4.20.7",
     "lodash": "^4.17.21",
     "luxon": "^2.4.0",
-    "react": "^16.12.0 || ^17.0.0"
+    "qs": "^6.11.0",
+    "react": "^16.12.0 || ^17.0.0",
+    "react-intl": "^6.0.3",
+    "react-on-rails": "^13.0.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.3",
+    "@types/lodash": "^4.14.182",
+    "@types/qs": "^6.9.7",
     "@umijs/fabric": "^2.8.1",
     "@umijs/test": "^3.0.5",
     "dumi": "^1.1.0",
@@ -44,5 +54,8 @@
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.1",
     "yorkie": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

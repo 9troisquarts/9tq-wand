@@ -1,4 +1,3 @@
-
 type OptionsType = {
   separator?: string;
   split?: any;
@@ -16,5 +15,4 @@ const decamelize = (string: string, options: OptionsType) => {
   return separateWords(string, options).toLowerCase();
 };
 
-
-export default decamelize
+export default decamelize;
