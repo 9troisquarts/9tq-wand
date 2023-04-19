@@ -64,43 +64,71 @@ export const () => {
 
 `,paraId:7,tocIndex:2}],g={},b={title:"useTableList",toc:"menu",filename:"docs/api/useTableList.md",order:3,nav:{title:"API",order:-1},group:{title:"Hooks",order:2},description:"Ce hook permet de g\xE9rer les tableaux de donn\xE9es."},x=[{id:"usetablelist",depth:1,title:"useTableList"},{id:"valeur-de-retour",depth:2,title:"Valeur de retour"},{id:"usage",depth:2,title:"Usage"}],L=[{value:"Ce hook permet de g\xE9rer les tableaux de donn\xE9es.",paraId:0,tocIndex:0},{value:"name",paraId:1,tocIndex:0},{value:" ",paraId:1,tocIndex:0},{value:"(required)",paraId:1,tocIndex:0},{value:" : Nom de l'objet \xE0 r\xE9cup\xE9rer dans la r\xE9ponse du serveur GraphQL.",paraId:1,tocIndex:0},{value:"options",paraId:1,tocIndex:0},{value:`:
 `,paraId:1,tocIndex:0},{value:"query",paraId:2,tocIndex:0},{value:": Requ\xEAte GraphQL \xE0 \xE9x\xE9cuter pour r\xE9cup\xE9rer la liste.",paraId:2,tocIndex:0},{value:"debug",paraId:2,tocIndex:0},{value:" : un bool\xE9en qui indique si le mode de d\xE9bogage est activ\xE9 ou non. La valeur par d\xE9faut est false.",paraId:2,tocIndex:0},{value:"paginate",paraId:2,tocIndex:0},{value:" : un bool\xE9en qui indique si la pagination est activ\xE9e ou non. La valeur par d\xE9faut est true.",paraId:2,tocIndex:0},{value:"params",paraId:2,tocIndex:0},{value:" : un objet qui contient les param\xE8tres \xE0 ajouter \xE0 la requ\xEAte GraphQL.",paraId:2,tocIndex:0},{value:"variables",paraId:2,tocIndex:0},{value:" : un objet qui contient les variables \xE0 passer \xE0 la requ\xEAte GraphQL.",paraId:2,tocIndex:0},{value:"searchOptions",paraId:1,tocIndex:0},{value:` : un objet qui contient les options de recherche. Il contient les champs suivants :
-`,paraId:1,tocIndex:0},{value:"key",paraId:3,tocIndex:0},{value:" : une cha\xEEne de caract\xE8res qui indique la cl\xE9 \xE0 utiliser pour stocker les param\xE8tres de recherche dans le local-storage, ",paraId:3,tocIndex:0},{value:"name",paraId:3,tocIndex:0},{value:" par d\xE9faut.",paraId:3,tocIndex:0},{value:"definition",paraId:3,tocIndex:0},{value:" : un objet qui d\xE9crit le mod\xE8le de donn\xE9es de la recherche.",paraId:3,tocIndex:0},{value:"updateLocation",paraId:3,tocIndex:0},{value:" : un bool\xE9en qui indique si l'URL doit \xEAtre mise \xE0 jour ou non. La valeur par d\xE9faut est false.",paraId:3,tocIndex:0},{value:"Le hook renvoie un objet contenant plusieurs propri\xE9t\xE9s :",paraId:4,tocIndex:1},{value:"records",paraId:5,tocIndex:1},{value:" : un tableau qui contient les donn\xE9es r\xE9cup\xE9r\xE9es.",paraId:5,tocIndex:1},{value:"data",paraId:5,tocIndex:1},{value:" : l'objet de r\xE9ponse complet de la requ\xEAte GraphQL.",paraId:5,tocIndex:1},{value:"loading",paraId:5,tocIndex:1},{value:" : un bool\xE9en qui indique si la requ\xEAte est en cours de chargement ou non.",paraId:5,tocIndex:1},{value:"pagination",paraId:5,tocIndex:1},{value:" : un objet qui contient les informations de pagination, \xE0 utiliser tel quel dans la props pagination des table antd.",paraId:5,tocIndex:1},{value:"search",paraId:5,tocIndex:1},{value:" : un objet qui contient les param\xE8tres de recherche actuels.",paraId:5,tocIndex:1},{value:"setExtraParams",paraId:5,tocIndex:1},{value:" : une fonction qui permet de d\xE9finir des param\xE8tres suppl\xE9mentaires pour la requ\xEAte.",paraId:5,tocIndex:1},{value:"refetch",paraId:5,tocIndex:1},{value:" : une fonction qui permet de relancer la requ\xEAte.",paraId:5,tocIndex:1},{value:"onReset",paraId:5,tocIndex:1},{value:" : une fonction qui permet de r\xE9initialiser les param\xE8tres de recherche et de relancer la requ\xEAte.",paraId:5,tocIndex:1},{value:"onSearchChange",paraId:5,tocIndex:1},{value:" : Fonction \xE0 utiliser pour modifier la valeur des param\xE8tre de recherche, peut \xEAtre utiliser dans la props onChange de ant-form.",paraId:5,tocIndex:1},{value:`import { useSearchFilters } from '@9troisquarts/wand';
+`,paraId:1,tocIndex:0},{value:"key",paraId:3,tocIndex:0},{value:" : une cha\xEEne de caract\xE8res qui indique la cl\xE9 \xE0 utiliser pour stocker les param\xE8tres de recherche dans le local-storage, ",paraId:3,tocIndex:0},{value:"name",paraId:3,tocIndex:0},{value:" par d\xE9faut.",paraId:3,tocIndex:0},{value:"definition",paraId:3,tocIndex:0},{value:" : un objet qui d\xE9crit le mod\xE8le de donn\xE9es de la recherche.",paraId:3,tocIndex:0},{value:"updateLocation",paraId:3,tocIndex:0},{value:" : un bool\xE9en qui indique si l'URL doit \xEAtre mise \xE0 jour ou non. La valeur par d\xE9faut est false.",paraId:3,tocIndex:0},{value:"Le hook renvoie un objet contenant plusieurs propri\xE9t\xE9s :",paraId:4,tocIndex:1},{value:"records",paraId:5,tocIndex:1},{value:" : un tableau qui contient les donn\xE9es r\xE9cup\xE9r\xE9es.",paraId:5,tocIndex:1},{value:"data",paraId:5,tocIndex:1},{value:" : l'objet de r\xE9ponse complet de la requ\xEAte GraphQL.",paraId:5,tocIndex:1},{value:"loading",paraId:5,tocIndex:1},{value:" : un bool\xE9en qui indique si la requ\xEAte est en cours de chargement ou non.",paraId:5,tocIndex:1},{value:"pagination",paraId:5,tocIndex:1},{value:" : un objet qui contient les informations de pagination, \xE0 utiliser tel quel dans la props pagination des table antd.",paraId:5,tocIndex:1},{value:"search",paraId:5,tocIndex:1},{value:" : un objet qui contient les param\xE8tres de recherche actuels.",paraId:5,tocIndex:1},{value:"setExtraParams",paraId:5,tocIndex:1},{value:" : une fonction qui permet de d\xE9finir des param\xE8tres suppl\xE9mentaires pour la requ\xEAte.",paraId:5,tocIndex:1},{value:"refetch",paraId:5,tocIndex:1},{value:" : une fonction qui permet de relancer la requ\xEAte.",paraId:5,tocIndex:1},{value:"onReset",paraId:5,tocIndex:1},{value:" : une fonction qui permet de r\xE9initialiser les param\xE8tres de recherche et de relancer la requ\xEAte.",paraId:5,tocIndex:1},{value:"onSearchChange",paraId:5,tocIndex:1},{value:" : Fonction \xE0 utiliser pour modifier la valeur des param\xE8tre de recherche, peut \xEAtre utiliser dans la props onChange de ant-form.",paraId:5,tocIndex:1},{value:`import React from 'react';
+import { Table } from 'antd';
 import { gql } from '@apollo/client';
+import { useTableList } from '@9troisquarts/wand';
 
-const searchDefinition = {
-  search: 'String',
-  startAfter: 'Date'
-};
-
-const GET_RECORDS_LIST = gql\`
-  query records($search: SearchRecordsAttributes) {
-    records(search: $search) {
-      records {
-        id
-        name
-        startingOn
-      }
-      pagination {
-        page
-        perPage
-        total
-      }
+// Requ\xEAte GraphQL pour r\xE9cup\xE9rer les utilisateurs avec pagination
+const GET_USERS = gql\`
+  query getUsers($perPage: Int, $page: Int, $search: UserFilter) {
+    users(perPage: $perPage, page: $page, search: $search) {
+      id
+      name
+      email
+    }
+    pagination {
+      page
+      perPage
+      total
     }
   }
 \`;
 
-export const () => {
+// D\xE9finition du mod\xE8le pour la recherche
+const userModelDefinition = {
+  name: { type: 'String' },
+  email: { type: 'String' },
+};
+
+const UserList = () => {
   const {
-    records: clients,
+    records: users,
+    loading,
+    pagination,
+    search,
     onSearchChange,
     onReset,
-    search,
-    refetch,
-  } = useTableList<RecordType>('records', 
-    { query: GET_RECORDS_LIST },
-    { definition: searchDefinition, updateLocation: true }
+  } = useTableList('users', {
+    query: GET_USERS,
+    paginate: true,
+  }, {
+    definition: userModelDefinition,
+    updateLocation: false,
+    key: 'users',
+  });
+
+  const columns = [
+    { title: 'ID', dataIndex: 'id', key: 'id' },
+    { title: 'Name', dataIndex: 'name', key: 'name' },
+    { title: 'Email', dataIndex: 'email', key: 'email' },
+  ];
+
+  return (
+    <div>
+      <SearchBar value={search} onChange={onSearchChange} onReset={onReset} />
+      <Table
+        dataSource={users}
+        columns={columns}
+        loading={loading}
+        pagination={pagination}
+        rowKey="id"
+      />
+    </div>
   );
-}
+};
+
+export default UserList;
 
 `,paraId:6,tocIndex:2}],R=e(17061),C=e.n(R),D=e(13012),k=e.n(D),B=e(17156),w=e.n(B),M={"docs-api-context-menu-demo-0":{component:a.lazy(w()(C()().mark(function W(){var G,te,me,ce;return C()().wrap(function(Ae){for(;;)switch(Ae.prev=Ae.next){case 0:return Ae.next=2,Promise.resolve().then(e.t.bind(e,67294,19));case 2:return G=Ae.sent,te=G.default,Ae.next=6,Promise.all([e.e(685),e.e(695)]).then(e.bind(e,18909));case 6:return me=Ae.sent,ce=me.ContextMenu,Ae.t0=k(),Ae.next=11,Promise.all([e.e(554),e.e(294)]).then(e.bind(e,12294));case 11:return Ae.t1=Ae.sent,(0,Ae.t0)(Ae.t1),Ae.abrupt("return",{default:function(){var gt=[{key:"1",label:te.createElement("a",{target:"_blank",rel:"noopener noreferrer",href:"https://www.antgroup.com"},"1st menu item")}];return te.createElement(ce,{menu:{items:gt}})}});case 14:case"end":return Ae.stop()}},W)}))),asset:{type:"BLOCK",id:"docs-api-context-menu-demo-0",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:`import React from 'react';
 import { ContextMenu } from '@9troisquarts/wand';
