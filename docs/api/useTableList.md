@@ -34,6 +34,7 @@ Ce hook permet de gérer les tableaux de données.
 Le hook renvoie un objet contenant plusieurs propriétés :
 
 - `records` : un tableau qui contient les données récupérées.
+- `error` : un tableau qui contient le message d'erreur en cas d'échec de la requête.
 - `data` : l'objet de réponse complet de la requête GraphQL.
 - `loading` : un booléen qui indique si la requête est en cours de chargement ou non.
 - `pagination` : un objet qui contient les informations de pagination, à utiliser tel quel dans la props pagination des table antd.
@@ -81,6 +82,7 @@ const UserList = () => {
     search,
     onSearchChange,
     onReset,
+    error,
   } = useTableList('users', {
     query: GET_USERS,
     paginate: true,
