@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/9troisquarts/9tq-wand/compare/v3.0.5...v3.1.0) (2024-06-24)
+
+
+### Features
+
+* return error in useTableList ([771beec](https://github.com/9troisquarts/9tq-wand/commit/771beecb4c5e8c4410dc68992f096e6ba6242110))
+
 ### [3.0.5](https://github.com/9troisquarts/9tq-wand/compare/v3.0.4...v3.0.5) (2024-04-08)
 
 ### [3.0.4](https://github.com/9troisquarts/9tq-wand/compare/v3.0.3...v3.0.4) (2024-04-08)
