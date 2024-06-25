@@ -51,10 +51,9 @@ function useTableList<RecordType = unknown, SearchType = unknown>(name: string, 
   });
   const [searchChanged, setSearchChanged] = useState<boolean>(false);
   const [internalPagination, setInternalPagination] = useState<{pageSize: number; page: number;}>({ pageSize: 25, page: 1 });
-  const { data, loading, refetch, error } = useQuery(query,
+  const { data, loading, refetch} = useQuery(query,
     {
       fetchPolicy: 'cache-and-network',
-      errorPolicy: "all", 
       variables: {
         perPage: internalPagination.pageSize,
         page: internalPagination.page,
@@ -100,7 +99,6 @@ function useTableList<RecordType = unknown, SearchType = unknown>(name: string, 
     records,
     data,
     loading,
-    error,
     pagination: paginationProps,
     search,
     onSearchChange: handleSearchChange,
