@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.1.1](https://github.com/9troisquarts/9tq-wand/compare/v3.1.0...v3.1.1) (2024-07-08)
+
+
+### Bug Fixes
+
+* add onCompleted on modal import ([b4b6a0f](https://github.com/9troisquarts/9tq-wand/commit/b4b6a0f4d209265b82f010d55a49aad44e833b98))
+* removes error from useTableList return ([69e5019](https://github.com/9troisquarts/9tq-wand/commit/69e50192f4aa5fe24872474edbf4686fdecae1dc))
+
 ## [3.1.0](https://github.com/9troisquarts/9tq-wand/compare/v3.0.5...v3.1.0) (2024-06-24)
 
 
