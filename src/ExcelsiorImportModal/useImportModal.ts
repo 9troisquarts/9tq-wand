@@ -6,6 +6,7 @@ import { ConfigurationType, ImporterType } from './types';
 const useImportModal = ({
   configuration,
   importType,
+  onCompleted,
   defaultValue = undefined,
   defaultImportFile = undefined,
 }: {
@@ -63,6 +64,7 @@ const useImportModal = ({
   useEffect(() => {
     if (['checked', 'imported'].includes(importFile?.state)) {
       cancel();
+      if (importFile.state === "imported" && onCompleted) onCompleted();
     }
   }, [importFile?.state]);
 
