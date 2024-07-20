@@ -69,7 +69,7 @@
     "moment": "^2.29.4",
     "qs": "<7",
     "query-string": "<7",
-    "react-inlinesvg": "<4",
+    "react-inlinesvg": "^4",
     "react-intl": "<6",
     "react-on-rails": "12.3"
   },
