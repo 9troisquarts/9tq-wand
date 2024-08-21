@@ -2,6 +2,7 @@
 import { Space } from 'antd';
 import React from 'react';
 import styles from './index.module.css';
+import nl2br from '../utils/nl2br';
 
 type ValueType = {
   description?: string;
@@ -22,7 +23,7 @@ const CSVNoticeItem: React.FC<Item> = ({ header, values, description }) => (
   <Space align="start" className={`${styles.item} wand-csv-notice-item`} key={header}>
     <code>{header}</code>
     <div>
-      {description}
+      {nl2br(description)}
       {values && values.length > 0 && (
         <ul>
           {values.map(({ value, description }) => (

@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { CSVNotice } from '@9troisquarts/wand';
+import { CSVNotice, nl2br } from '@9troisquarts/wand';
 import {
   Button,
   Descriptions,
@@ -133,6 +133,11 @@ export const ImportModalContent: React.FC<ImportModalProps> = (props) => {
                     )}
                   </Space>
                 </Typography.Title>
+                {importer.description && (
+                  <Typography.Paragraph>
+                    {nl2br(importer.description)}
+                  </Typography.Paragraph>
+                )}
                 <CSVNotice schema={importer.notice} />
               </>
             )}
