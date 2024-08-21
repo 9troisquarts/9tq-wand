@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/9troisquarts/9tq-wand/compare/v3.1.1...v3.2.0) (2024-08-21)
+
+
+### Features
+
+* Ajout d'un breakline au niveau des descriptions ([76f8aae](https://github.com/9troisquarts/9tq-wand/commit/76f8aae169145135c06fba801ecaaff1fc6361ea))
+
 ### [3.1.2](https://github.com/9troisquarts/9tq-wand/compare/v3.1.1...v3.1.2) (2024-07-20)
 
 ### [3.1.1](https://github.com/9troisquarts/9tq-wand/compare/v3.1.0...v3.1.1) (2024-07-08)
