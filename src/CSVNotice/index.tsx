@@ -20,9 +20,14 @@ type CSVNoticeProps = {
 
 const CSVNoticeItem: React.FC<Item> = ({ header, values, description }) => (
   <Space align="start" className={`${styles.item} wand-csv-notice-item`} key={header}>
-    <code>{header}</code>
+    {header !== '' && <code>{header}</code>}
     <div>
-      {description}
+      {description.split('\n').map((line, index) => (
+        <React.Fragment key={index}>
+          {line}
+          <br />
+        </React.Fragment>
+      ))}
       {values && values.length > 0 && (
         <ul>
           {values.map(({ value, description }) => (
