@@ -108,7 +108,7 @@ export const ImportModalContent: React.FC<ImportModalProps> = (props) => {
           tip={translate ? translate('excelsior_modal.uploading_file') : 'Uploading...'}
         >
           <Space direction="vertical" style={{ width: '100%' }}>
-            {importer.description && (
+            {importer && importer.description && (
               <Typography.Paragraph>
                 {nl2br(importer.description)}
               </Typography.Paragraph>
