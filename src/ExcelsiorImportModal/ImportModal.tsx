@@ -263,7 +263,7 @@ export const ImportModalContent: React.FC<ImportModalProps> = (props) => {
               title={
                 translate
                   ? translate('excelsior_modal.file_successfully_imported')
-                  : 'File successfully importer'
+                  : 'File successfully imported'
               }
               extra={[
                 <Button type="text" key="reset" onClick={onCancel}>
