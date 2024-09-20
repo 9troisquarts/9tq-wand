@@ -52,14 +52,20 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "peerDependencies": {
+    "antd": "<5",
+    "ahooks": "<4",
+    "react": "<19",
+    "rc-picker": "~2.7.0",
+    "react-dom": "<19",
+    "react-inlinesvg": "^4",
+    "@ant-design/icons": "<5"
+  },
   "dependencies": {
-    "@ant-design/icons": "<5",
-    "@apollo/client": "<4",
     "@emotion/css": "^11.10.5",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "ahooks": "<4",
-    "antd": "<5",
+    "@apollo/client": "<4",
     "axios": "<2",
     "dayjs": "^1.11.10",
     "graphql": "<17",
@@ -69,9 +75,8 @@
     "moment": "^2.29.4",
     "qs": "<7",
     "query-string": "<7",
-    "react-inlinesvg": "^4",
     "react-intl": "<6",
-    "react-on-rails": "12.3"
+    "react-on-rails": "<13"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
@@ -93,11 +98,6 @@
     "react-dom": "<19",
     "standard-version": "^9.5.0",
     "stylelint": "^14.9.1"
-  },
-  "peerDependencies": {
-    "react": "<19",
-    "rc-picker": "~2.7.0",
-    "react-dom": "<19"
   },
   "publishConfig": {
     "access": "public"
