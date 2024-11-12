@@ -1,7 +1,5 @@
 .container {
-  border-radius: 5px;
-  background-color: lighten(#cccccc, 15%);
-  padding: 10px 15px;
+  padding: 0.5rem 1rem;
 }
 
 .item {

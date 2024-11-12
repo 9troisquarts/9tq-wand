@@ -108,6 +108,11 @@ export const ImportModalContent: React.FC<ImportModalProps> = (props) => {
           tip={translate ? translate('excelsior_modal.uploading_file') : 'Uploading...'}
         >
           <Space direction="vertical" style={{ width: '100%' }}>
+            {importer && importer.description && (
+              <Typography.Paragraph>
+                {nl2br(importer.description)}
+              </Typography.Paragraph>
+            )}
             <Dragger name="file" showUploadList={false} multiple={false} beforeUpload={onImport}>
               <p className="ant-upload-hint">
                 {translate
@@ -133,11 +138,6 @@ export const ImportModalContent: React.FC<ImportModalProps> = (props) => {
                     )}
                   </Space>
                 </Typography.Title>
-                {importer.description && (
-                  <Typography.Paragraph>
-                    {nl2br(importer.description)}
-                  </Typography.Paragraph>
-                )}
                 <CSVNotice schema={importer.notice} />
               </>
             )}
@@ -263,7 +263,7 @@ export const ImportModalContent: React.FC<ImportModalProps> = (props) => {
               title={
                 translate
                   ? translate('excelsior_modal.file_successfully_imported')
-                  : 'File successfully importer'
+                  : 'File successfully imported'
               }
               extra={[
                 <Button type="text" key="reset" onClick={onCancel}>
