@@ -77,6 +77,8 @@ const castValue = (type, value) => {
       return mDateTime.format();
     case 'password':
     case 'files':
+      if (value) return value.filter((f) => f instanceof File);
+      return [];
     case 'file':
       if (value) return value;
       return;
