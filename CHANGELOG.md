@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.3.1](https://github.com/9troisquarts/9tq-wand/compare/v3.2.4...v3.3.1) (2024-11-12)
+
+
+### Bug Fixes
+
+* import modal success message typo ([a3675c4](https://github.com/9troisquarts/9tq-wand/commit/a3675c4c6d6881fdf5cb51a99e236d303e1cb116))
+* **mulitple_upload:** Correction du cast attributes pour les fichiers qui ne sont pas des instances de fichiers ([44c6d2c](https://github.com/9troisquarts/9tq-wand/commit/44c6d2caea40d24b5ef6bf74d6bbdf22b3c1b724))
+
+### [3.2.3](https://github.com/9troisquarts/9tq-wand/compare/v3.2.2...v3.2.3) (2024-08-21)
+
+
+### Bug Fixes
+
+* undefined error ([2e1d236](https://github.com/9troisquarts/9tq-wand/commit/2e1d23612329b9931c984244b9542164dab0a0a9))
+
+### [3.2.2](https://github.com/9troisquarts/9tq-wand/compare/v3.2.1...v3.2.2) (2024-08-21)
+
+
+### Bug Fixes
+
+* fix placement of importer description in modal ([d1a9f52](https://github.com/9troisquarts/9tq-wand/commit/d1a9f5273b5a22f1a0ce6dade0f683fad80206f2))
+
 ### [3.2.3](https://github.com/9troisquarts/9tq-wand/compare/v3.2.2...v3.2.3) (2024-08-21)
 
 
